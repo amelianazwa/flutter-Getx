@@ -148,7 +148,7 @@ class DashboardController extends GetxController {
       update();
       getEvent();
       getYourEvent();
-      Get.close(1);
+      Get.close(1);   // antara true atau false
     } else {
       Get.snackbar(
         'Failed',
@@ -193,3 +193,5 @@ class DashboardController extends GetxController {
     }
   }
 }
+
+

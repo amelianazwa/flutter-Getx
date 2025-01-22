@@ -12,6 +12,10 @@ class AddView extends GetView {
   Widget build(BuildContext context) {
     // Nih, bikin controller buat ngurusin dashboard pake Get.put
     DashboardController controller = Get.put(DashboardController());
+    controller.nameController.clear();
+    controller.locationController.clear();
+    controller.descriptionController.clear();
+    controller.eventDateController.clear();
     return Scaffold(
       // AppBar nih, buat header atas. Judulnya "Add Your Event", terus ada di tengah biar estetik
       appBar: AppBar(
